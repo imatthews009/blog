@@ -1,0 +1,23 @@
+<div class="style_image">
+    <%= image_tag("yosemite2.jpg") %>
+</div>
+<div class="wrapper clearfix">
+    <div class="col-1 homepage_content">
+        <h2>About</h2>
+        <hr>
+        <p>Hello! My name is Ian Matthews and I am an aspiring software engineer. I began my career in accounting and after a few years I decided to make a change.</p> <p>I love the challenge of creating something new and learning new skills</p><p>When I'm not staring at my screen for hours I can be found on the golf course or fishing on a river</p> 
+    </div>
+    <div class="col-2 homepage_content">
+        <h2>Stuff I've written</h2>
+        <hr>
+        <% @posts.each do |post|%>
+            <h3 class="blog_post"><a href="#"> <%=link_to post.title, "/posts/#{post.id}" %></a></h3>
+            <p class="date"><%= post.created_at.strftime("%A, %b %d")%></p>
+
+        <% end %>
+    </div>
+    <div class="col-3 homepage_content">
+        <h2>Stuff I've built</h2>
+        <hr>
+    </div> 
+</div>

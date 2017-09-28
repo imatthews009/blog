@@ -1,6 +1,6 @@
 @import '_normalize.css.scss';
-@import url("welcome.css.scss");
-@import url("post_project.css.scss");
+@import url("_welcome.css.scss");
+@import url("_post_project.css.scss");
 
 
 html {
@@ -117,6 +117,15 @@ input[type="submit"]:hover, .button:hover{
     margin-bottom: 1rem;
 }
 
+.style_image img{
+    border-radius: 50%; 
+    width: 250px; 
+    height: auto; 
+    margin: 0 auto; 
+    display: block; 
+    padding: 20px 0 0 0;
+}
+
 
 hr {
     width: 3em;
@@ -124,7 +133,7 @@ hr {
     height: 2px;
     border:0;
     border-top: 2px solid #9DC5BB;
-    margin: 2rem 0;
+    margin: 0 auto;
 }
 h1 {
     font-size: 2.5rem;

@@ -10,8 +10,9 @@
   </head>
 
   <body>
-    <header id="main_navigation" class="clearfix"> 
-        <a href="#" class="name">Ian Matthews</a>
+    <header id="main_navigation" class="clearfix">
+        <%= link_to "Ian Matthews", root_path, class: "name" %> 
+
         <nav>
             <%= link_to "Articles", posts_path %>              
             <%= link_to "Projects"  %>              
@@ -21,5 +22,13 @@
     </header>
 
     <%= yield %>
+
+     <footer id="main_footer">
+                <nav>
+                    <a href="https://github.com/imatthews009" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ian-w-matthews/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </nav>
+                
+            </footer>
   </body>
 </html>

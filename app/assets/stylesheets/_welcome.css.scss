@@ -1,15 +1,20 @@
-.col-1, .col-2, .col-3 {
+.col-2, .col-3 {
     float: left;
+    text-align: center;
+    padding: 100px 0 0 0;
+     width: 50%;
+}
+
+
+.col-1 h2{
+    text-align: center;
 }
 
 .col-1 {
-    width: 45%;
-    padding: 0 5% 0 2.5%;
-}
-
-.col-2, .col-3 {
-    width: 27.5%;
-    padding: 0 2.5%;
+    text-align: left;
+    margin: 0 auto;
+    width: 75%;
+    padding: 0 5% 0 5%;
 }
 
 .homepage_content h2 {
