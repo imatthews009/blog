@@ -44,11 +44,11 @@ before_action :find_post, only:[:show, :edit, :update, :destroy]
     private
 
     def post_params
-        params.require(:post).permit(:title, :content)
+        params.require(:post).permit(:title, :content, :slug)
     end
 
     #find post method because it is used frequently
     def find_post
-        @post = Post.find(params[:id])
+        @post = Post.friendly.find(params[:id])
     end
 end
