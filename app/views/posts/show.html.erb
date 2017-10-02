@@ -13,7 +13,7 @@
                 <div id="share_box">
 
 
-                    <a onclick="javascript:window.open('http://twitter.com/share?text=<%= @post.title %> by @IanWMatthews - &amp;<%= url_for([@post, {only_path:false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0)">
+                    <a onclick="javascript:window.open('http://twitter.com/share?text=<%= @post.title %> by @IanWMatthews - &amp;url=<%= url_for([@post, {only_path:false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
                           <i class="fa fa-twitter"></i></i>
                         </a>
                     <a onclick="javascript:window.open('http://facebook.com/share?php?u= - ', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
