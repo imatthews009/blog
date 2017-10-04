@@ -11,6 +11,23 @@
     text-transform: uppercase;
 
 }
+#admin_links {
+    border-top: 1px solid #4F4A4F;
+    border-bottom: 1px solid #4F4A4F;
+    text-align: center;
+    padding: 1em 0;
+    margin: 3em 0;
+}
+
+#admin_links a {
+    color: #9DC5BB;
+    margin: 0 1em;
+    font-weight: 700;
+    font-size: .8em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
 
 #posts_wrapper .post h2 a {
     text-decoration: none;
