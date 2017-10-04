@@ -1,6 +1,8 @@
 class PostsController < ApplicationController
 before_action :find_post, only:[:show, :edit, :update, :destroy]
 
+before_action :authenticate_user!, except: [:index, :show] #This allows users to view index or show page without logging in but for any other page they will be redirected to the sign up page if they aren't logged in.
+
     def index
         @post = Post.all.order("created_at desc").paginate(page: params[:page], per_page: 2)
     end
